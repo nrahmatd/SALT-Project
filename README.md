@@ -1,6 +1,6 @@
-# Springboot Java Persistence API
+# SALT Project
 
-This project build with Springboot Framework with Java Persistence API library for experiment purpose. 
+This project build with Springboot Framework as the technical test requirement by SALT. 
 
 Refers: https://spring.io/projects/spring-boot
 
