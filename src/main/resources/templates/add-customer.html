@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Add User</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="../css/shards.min.css"> -->
+</head>
+
+<body>
+<div class="container my-5">
+  <h3> Tambah Konsumen</h3>
+  <div class="card">
+    <div class="card-body">
+      <div class="col-md-10">
+        <form action="/restapi/addcustomer" method="post">
+          <div class="row">
+            <div class="form-group col-md-8">
+              <label for="nama" class="col-form-label">Nama</label> <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama">
+            </div>
+            <div class="form-group col-md-8">
+              <label for="alamat" class="col-form-label">Alamat</label> <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Alamat">
+            </div>
+
+            <div class="form-group col-md-8">
+              <label for="kota" class="col-form-label">Kota</label> <input type="text" class="form-control" id="kota" name="kota" placeholder="Kota">
+            </div>
+
+            <div class="form-group col-md-8">
+              <label for="provinsi" class="col-form-label">Provinsi</label> <input type="text" class="form-control" id="provinsi" name="provinsi" placeholder="Provinsi">
+            </div>
+
+            <div class="form-group col-md-8">
+              <label for="tgl_registrasi" class="col-form-label">Tanggal Registrasi</label> <input type="date" class="form-control" id="tgl_registrasi" name="tgl_registrasi" placeholder="Tanggal Registrasi">
+            </div>
+
+            <div class="form-group col-md-8">
+              <label for="status" class="col-form-label">Status</label>
+              <select class="custom-select" style="width:150px;" name="status" id="status">
+                <option value="aktif">Aktif</option>
+                <option value="non-aktif">Non Aktif</option>
+              </select>
+            </div>
+
+            <div class="col-md-6">
+              <input type="submit" class="btn btn-primary" value="Tambah">
+            </div>
+
+            <div class="form-group col-md-8"></div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
